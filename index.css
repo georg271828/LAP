@@ -1,0 +1,67 @@
+html{
+  background-color: snow;
+scroll-behavior: smooth;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column1 {
+  flex: 10%;
+  padding-right: 10px;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.navbar{
+  margin-top: 40px; 
+border: 1px solid black;
+margin-left: -3px;
+
+/*	 float:left;*/
+/*	 position: fixed;*/
+/*	 display: flex;*/
+}
+
+.column2 {
+  flex: 78%;
+/*    padding: 5px;*/
+flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+
+
+ .navbar a {
+ padding-top: 10px; 
+text-decoration: none;
+  color: black;
+margin-left: -40px; 
+  display: inline-block;
+  position: relative;
+  color: black;
+  text-decoration: none;  
+  padding: 10px 10px;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: lightgray;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  background-color: lightgray;
+} 

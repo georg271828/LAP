@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
    <head>
+      <title>Sage for Linear Algebra & Probaility</title>
+      <link rel="stylesheet" href="index.css">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
-      <title>Linear Algebra & Probbaility: SageMathCell</title>
+      <title>Linear Algebra & Probaility: SageMathCell</title>
       <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
       <script>
        // Make the div with id 'mycell' a Sage cell
@@ -16,26 +18,35 @@
        </script>
    </head>
    <body>
-      <h1>Welcome to Linear Algebra & Probability</h1>
-      <p>This page is under development..</p>
-      <h1>Working in Sage</h1>
+      <div class = row>
+         <div class = column1>
+               <ul class = navbar>
+                  <a class = #Sage_Probability href = #Sage_for_Probability>• Sage for Probability</a>
+			       <a class = #Sage_LinAlg href = #Sage_for_Linear_Algebra>• Sage for Linear Algebra</a>
+                  <a class = computations href = #your_own_computations>• Your Own Computations</a>
+            </ul>
+         </div>
+         <div class = column2>
+            <h1>Welcome to Linear Algebra & Probability</h1>
+            <p>This page is under development..</p>
+            <h1>Working in Sage</h1>
       
-      <p>For standard constructions from linear algebra see Sage documentation: 
-         <ul>
-            <li><a href="https://doc.sagemath.org/html/en/prep/Quickstarts/Linear-Algebra.html">Sage Quickstart for Linear Algebra</a>.</li>
-            <li><a href="https://doc.sagemath.org/html/en/tutorial/tour_linalg.html"> A Guided Tour in Linear Algebra</a>.</li> 
-      </ul></p> 
+            <p id = Sage_for_Linear_Algebra>For standard constructions from linear algebra see Sage documentation: 
+               <ul>
+                  <li><a href="https://doc.sagemath.org/html/en/prep/Quickstarts/Linear-Algebra.html">Sage Quickstart for Linear Algebra</a>.</li>
+                  <li><a href="https://doc.sagemath.org/html/en/tutorial/tour_linalg.html"> A Guided Tour in Linear Algebra</a>.</li> 
+            </ul></p> 
          
-      <p>For basic probability constructions see Sage reference manual: 
-         <ul>
-            <li><a href="https://doc.sagemath.org/html/en/reference/probability/index.html#">Probability</a>.</li>
-      </ul></p>
-      
-      <p>More guidelines to follow.. </p>
+            <p id = Sage_for_Probability>For basic probability constructions see Sage reference manual: 
+               <ul>
+                  <li><a href="https://doc.sagemath.org/html/en/reference/probability/index.html#">Probability</a>.</li>
+      			</ul>
+            <p>More guidelines to follow.. </p>
 
-      <h2>Your own computations</h2>
-      Type your own Sage computation below and click &ldquo;Evaluate&rdquo;.
-      <div class="compute"><script type="text/x-sage">plot(sin(x), (x, 0, 2*pi))</script></div>
-         
+            <h2 id = your_own_computations>Your own computations</h2>
+            Type your own Sage computation below and click &ldquo;Evaluate&rdquo;.
+            <div class="compute"><script type="text/x-sage">plot(sin(x), (x, 0, 2*pi))</script></div>
+         </div>
+      </div>
    </body>
 </html>
